@@ -3,9 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha512-L7MWcK7FNPcwNqnLdZq86lTHYLdQqZaz5YcAgE+5cnGmlw8JT03QB2+oxL100UeB6RlzZLUxCGSS4/++mNZdxw==" crossorigin="anonymous" />
   <title>Library Of Meals</title>
 </head>
 <body>
+<div class="container">
+  <h1>Library of Meals</h1>
+  <div class="flex">
+    <form class="flex" id="submit">
+      <input type="text" id="search" placeholder="Type a meal e.g. Steak or Fish">
+      <button class="search-btn"> 
+        <i class="fas fa-search"></i>
+      </button>
+    </form>
+    <button class="random-btn" id="random">
+      <i class="fas fa-random"></i>
+    </button>
+  </div>
+  <div id="result-heading"></div>
+  <div id="meals" class="meals"></div>
+  <div id="single-meal"></div>
+
+</div>
   
+<script src="script.js"></script>  
 </body>
 </html>
